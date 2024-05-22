@@ -1,4 +1,5 @@
-# Anotações gerais 
-Organização dos módulos em pastas sobre BlockChain.
+# BlockChain, JavaScript
 ---
-Yves Yan Esteves Pereira
+- Conceitos de Blockchain
+- JavaScript - lógica de programação, projetos, exercícios e projetos
+
