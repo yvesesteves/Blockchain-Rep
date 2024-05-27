@@ -2,6 +2,6 @@
 
 ---
 
-- Conceitos de Blockchain
-- JavaScript - lógica de programação, projetos, exercícios e projetos
-- Node.JS - Anotações, conceitos, programas e projetos
+- Conceitos de Blockchain.
+- JavaScript - lógica de programação, projetos, exercícios e projetos.
+- Node.JS - Anotações, conceitos, programas e projetos.
