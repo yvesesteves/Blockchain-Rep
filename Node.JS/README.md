@@ -23,7 +23,7 @@ HTTP: Dividido em 2 ações: requisição e resposta, o retorno de dados só é 
 
 ```
 var http = require(“http”);
-http.createServer().listen(3000);`
+http.createServer().listen(3000);
 ```
 
 http://localhost:3000 (no navegador)
@@ -32,3 +32,40 @@ npm init
 npm install express --save
 const express = require("express"); // Importando o express
 const app = express(); // Iniciando o express
+
+Rota: diversos caminhos que sua aplicação possui
+
+```
+// rota inicial para pagina principal
+app.get("/",function(req,res){
+    res.send("Bem vindo a pagina principal");
+});
+
+// req -> dados enviados pelo usuário
+// res -> resposta que vai ser enviada para o usuario
+
+app.get("/blog",function(req,res){
+    res.send("<h1>Bem vindo ao blog!</h1>");
+});
+```
+
+
+Parametros: caminho alem da rota
+````
+//Exemplo de parametro (fixos em rotas) obrigatorio:
+app.get("/ola/:nome", function(req,res){
+    var nome = req.params.nome;
+    res.send("Oi " + nome);
+});
+
+
+//Exemplo parametro NÃO obrigatório:
+app.get("/blod/:artigo?", function(req,res){
+    var artigo = req.params.artigo;
+    if(artigo){
+        res.send("<h2> Artigo: " + artigo + "</h2>")
+    }else{
+        res.send("Bem vindo!");
+    }
+});
+````

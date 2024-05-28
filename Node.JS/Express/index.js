@@ -18,6 +18,7 @@ app.get("/blog/:artigo?",function(req, res){
     }
 })
 
+//query param: parametros mais dinamicos, abertos e opcionais
 app.get("/canal/youtube", function(req, res){
     var canal = req.query["canal"];
 
