@@ -69,3 +69,14 @@ app.get("/blod/:artigo?", function(req,res){
     }
 });
 ````
+_________________
+Programação Síncrona: É bloqueante (fluxo do codigo), as operações são executadas em sequencia (aguarda a execução da operação antes de prosseguir para a próxima).
+
+
+Programação Assíncrona: Não é bloqueante(não bloqueia o fluxo do programa), que permite que outras operações continuem enquanto aguardam a conclusão de outras tarefas.
+
+
+Callback: Uma função que se liga a ela à um metodo assincrono, e quando esse método é concluído, a função é chamada.
+
+
+
