@@ -19,7 +19,7 @@ var variavel = require("./nomeDoFile");  // importando as funçoes
 
 ---
 
-HTTP: Dividido em 2 ações: requisição e resposta, o retorno de dados só é possivel graças ao HTTP, o protocolo e a base que move a WEB.
+** HTTP:**  Dividido em 2 ações: requisição e resposta, o retorno de dados só é possivel graças ao HTTP, o protocolo e a base que move a WEB.
 
 ```
 var http = require(“http”);
@@ -33,7 +33,7 @@ npm install express --save
 const express = require("express"); // Importando o express
 const app = express(); // Iniciando o express
 
-Rota: diversos caminhos que sua aplicação possui
+** Rota:**  diversos caminhos que sua aplicação possui
 
 ```
 // rota inicial para pagina principal
@@ -50,7 +50,7 @@ app.get("/blog",function(req,res){
 ```
 
 
-Parametros: caminho alem da rota
+** Parametros:**  caminho alem da rota
 ````
 //Exemplo de parametro (fixos em rotas) obrigatorio:
 app.get("/ola/:nome", function(req,res){
@@ -70,13 +70,25 @@ app.get("/blod/:artigo?", function(req,res){
 });
 ````
 _________________
-Programação Síncrona: É bloqueante (fluxo do codigo), as operações são executadas em sequencia (aguarda a execução da operação antes de prosseguir para a próxima).
+** Programação Síncrona:**  É bloqueante (fluxo do codigo), as operações são executadas em sequencia (aguarda a execução da operação antes de prosseguir para a próxima).
 
 
-Programação Assíncrona: Não é bloqueante(não bloqueia o fluxo do programa), que permite que outras operações continuem enquanto aguardam a conclusão de outras tarefas.
+** Programação Assíncrona:**  Não é bloqueante(não bloqueia o fluxo do programa), que permite que outras operações continuem enquanto aguardam a conclusão de outras tarefas.
 
 
-Callback: Uma função que se liga a ela à um metodo assincrono, e quando esse método é concluído, a função é chamada.
+** Callback:**  Uma função que se liga a ela à um metodo assincrono, e quando esse método é concluído, a função é chamada.
+
+
+** Promisses:**  Promessa, espécie de "contrato" ligado a algo assíncrono, representa a eventual conclusão (ou falha) de uma operação assíncrona e seu valor resultante. SEMPRE que se for usar promises, tem que tratar sua rejeição (catch).
+
+
+** Async e Await: ** Uma maneira mais moderna, limpa e simples de trabalhar com Promises, eles podem tornar o código assíncrono mais parecido com o código síncrono, facilitando a leitura e a manutenção.
+
+________________________________________
+**Programação Orientada à Objetos com JavaScript**
+
+*Vantagens*: código mais limpo, mais facil de manuntenção, mais livre de bugs, reutilização de código.
+
 
 
 
