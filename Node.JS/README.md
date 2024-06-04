@@ -21,6 +21,8 @@ var variavel = require("./nomeDoFile");  // importando as funçoes
 
 ** HTTP:**  Dividido em 2 ações: requisição e resposta, o retorno de dados só é possivel graças ao HTTP, o protocolo e a base que move a WEB.
 
+
+
 ```
 var http = require(“http”);
 http.createServer().listen(3000);
@@ -69,6 +71,30 @@ app.get("/blod/:artigo?", function(req,res){
     }
 });
 ````
+
+** Verbos HTTP:**  Formas de dizer de como se quer fazer uma requisição, são eles:
+ - *GET:* mais utilizado do mundo, utilizado com o endereço do navegador, retorna dados de um servidor
+ - *POST:* Criar novas coisas, muito utilizado em cadastro e formularios, e não pode ser utilizado via link
+ - *PUT*: Atualiza os dados completamente ou quase totalmente, semelhante ao post, mas o post cria e o put edita
+ - *PATCH:*: Atualiza coisas parcialmente
+ - *DELETE:* Deleta os dados
+
+** Status Code: ** Serve pra informar oque ocorreu na requisição. https://pt.wikipedia.org/wiki/Lista_de_códigos_de_estado_HTTP
+
+** API: ** Interface de comunicação entre uma ou mais coisas
+
+** Web Services: ** API que funciona atraves de um protocolo HTTP
+
+** REST: ** Padrão de desenvolvimento de web services, eles retornam JSON, XML, arquivos em geral. Para um REST precisa-se:
+- Cliente servidor
+- Stateless
+- Cacheável
+- Saber trabalhar com camadas
+- Interface uniforme e direta
+
+** Restful: ** quando se implementa uma API Rest seguindo todas as especificações, como retornar tudo, dividir a API em recursos, implementa os verbos HTTP, retornar uma tabela de links.  
+
+
 _________________
 ** Programação Síncrona:**  É bloqueante (fluxo do codigo), as operações são executadas em sequencia (aguarda a execução da operação antes de prosseguir para a próxima).
 
