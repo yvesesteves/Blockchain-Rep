@@ -115,6 +115,12 @@ ________________________________________
 
 *Vantagens*: código mais limpo, mais facil de manuntenção, mais livre de bugs, reutilização de código.
 
+---
+** HATEOAS: **ultimo nivel para o RESTful, traz o recurso de hipermedia (interconexão de diferentes tipos de mídia, links dentro de links)
+
+**Vantagens do HATEOS **: Facilitar o cliente da API, desacopla o back-end do front-end
+
+
 
 
 

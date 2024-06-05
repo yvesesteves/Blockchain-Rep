@@ -78,8 +78,27 @@ var DB = {
 }
 
 app.get("/games",auth,(req, res) => {     // criando endpoint, rotas na API,listando todos os dados dos games
+    
+    var HATEOS = [      // utilizando HATEOS
+        {
+            href: "http://localhost:45679/game/0",
+            method: "DELETE",
+            rel: "delete_game"
+        },
+        {
+            href: "http://localhost:45679/game/0",
+            method: "GET",
+            rel: "get_game"
+        },
+        {
+            href: "http://localhost:45679/auth",
+            method: "POST",
+            rel: "login"
+        }
+    ]
+    
     res.statusCode = 200;
-    res.json({empresa: req.empresa,user: req.loggedUser,games: DB.games});
+    res.json({games: DB.games, _links: HATEOS});
 });
 
 app.get("/game/:id",auth,(req, res) => {
@@ -89,11 +108,33 @@ app.get("/game/:id",auth,(req, res) => {
         
         var id = parseInt(req.params.id);
 
+        var HATEOS = [      // utilizando HATEOS
+        {
+            href: "http://localhost:45679/game/"+id,
+            method: "DELETE",
+            rel: "delete_game"
+        },
+        {
+            href: "http://localhost:45679/game/"+id,
+            method: "PUT",
+            rel: "edit_game"
+        },
+        {
+            href: "http://localhost:45679/game/"+id,
+            method: "GET",
+            rel: "get_game"
+        },
+        {
+            href: "http://localhost:45679/games",
+            method: "GET",
+            rel: "get_all_games"
+        }
+    ]
         var game = DB.games.find(g => g.id == id);
 
         if(game != undefined){
             res.statusCode = 200;
-            res.json(game);
+            res.json({game,_links: HATEOS});
         }else{
             res.sendStatus(404);
         }
