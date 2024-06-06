@@ -120,6 +120,31 @@ ________________________________________
 
 **Vantagens do HATEOS **: Facilitar o cliente da API, desacopla o back-end do front-end
 
+---
+
+** MongoDB: ** 
+- MongoDB é um banco de dados  NoSQL orientado a documentos que armazena dados em formato BSON (uma forma binária de JSON).
+- Diferente dos bancos de dados relacionais tradicionais, que utilizam tabelas e linhas, o MongoDB organiza os dados em coleções de documentos.
+-  Não precisa seguir uma estrutura pré definida de tabela. 
+-  O relacionamento no mongo funciona por herança.
+-  Adequado para aplicações com dados mais flexíveis.
+-  O mais recomendado é utilizar MySQL como banco de dados primário e o MongoDB como banco de dados secundário nas aplicações WEB, pois o Mongo não tem disponibilidade, num select por exemplo, ele nao retorna erro, retorna um JSON vazio, além disso, o custo dele é mais caro e um pouco menos instável.
+-  Porém, ele é mais produtivo que o MySQL.
+
+---
+
+** TDD: ** Desenvolvimento orientado a testes, metodologia de desenvolvimento, forma de como vai criar-se um projeto.
+
+** Quando usar: **
+- quando se for iniciar um novo projeto
+- quando tiver um bom tempo e orçamento
+- projetos de medio porte em geral
+
+** Quando não usar: ** 
+   - quando não tiver tempo
+   - tiver pouco orçamento
+   - quando pegar um projeto ja feito
+   - em projetos de pequeno porte
 
 
 
