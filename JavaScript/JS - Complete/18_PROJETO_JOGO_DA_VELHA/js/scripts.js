@@ -1,3 +1,5 @@
+//  Jogo da velha utilizando HTML, CSS, DOM e EVENTOS
+
 let x = document.querySelector('.x');
 let o = document.querySelector('.o');
 let boxes = document.querySelectorAll('.box');

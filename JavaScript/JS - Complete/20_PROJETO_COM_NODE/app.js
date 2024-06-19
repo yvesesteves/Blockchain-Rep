@@ -1,3 +1,5 @@
+// Projeto com Node, Express, Sequelize (Job Finder)
+
 const express    = require('express');
 const exphbs     = require('express-handlebars');
 const app        = express();
