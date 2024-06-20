@@ -1,12 +1,12 @@
 {
-  "name": "TDDNAPRATICA",
+  "name": "tddnapratica",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
     "test": "jest"
   },
   "keywords": [],
-  "author": "",
+  "author": "Yves Esteves",
   "license": "ISC",
   "description": "",
   "dependencies": {

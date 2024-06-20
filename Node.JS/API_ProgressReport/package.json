@@ -5,7 +5,7 @@
   "scripts": {
     "test": "jest"
   },
-  "author": "",
+  "author": "Yves Esteves",
   "license": "ISC",
   "description": "",
   "dependencies": {
