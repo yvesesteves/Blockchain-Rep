@@ -1,4 +1,4 @@
-# Progress Report 3.1 (Udemy) - Anotações gerais sobre Node.JS
+# Progress Report 3.1 - Anotações gerais sobre Node.JS
 
 ---
 
