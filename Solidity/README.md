@@ -102,10 +102,8 @@ Neste exemplo, a função verifica o valor de Ether enviado com a transação (m
 ### **8.2 Mappings**
 Mappings são estruturas de dados semelhantes a tabelas de hash, usadas para armazenar pares chave-valor. Em Solidity, a chave não é armazenada diretamente; em vez disso, o hash da chave é utilizado.
 - Sintaxe:
-  ```
-mapping(KeyType => ValueType) VariableName;
+  ```mapping(KeyType => ValueType) VariableName;```
 
- ```
 
 ### **8.3 Structs**
 Structs em Solidity são usadas para agrupar variáveis relacionadas. Elas são semelhantes a registros em outras linguagens de programação e são úteis para organizar dados sem incorrer em custos adicionais de gas, como ocorre com contratos. Exemplo:
