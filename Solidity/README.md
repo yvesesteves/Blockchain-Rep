@@ -17,7 +17,8 @@
         function updateOurString(string memory _myString) public {
             myString = _myString;
     }
-}
+    }
+
 
 ##  **4. Tipos de dados em Solidity**
 - Solidity é uma linguagem de tipagem estática, o que significa que você deve definir explicitamente o tipo dos dados que está usando. A linguagem suporta muitos dos tipos de dados encontrados em outras linguagens de programação, como string, bool, entre outros, mas também introduz tipos específicos como address e não oferece suporte nativo para números de ponto flutuante.
